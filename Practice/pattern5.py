@@ -1,12 +1,11 @@
-number=int(input("Enter a number to be reversed: "))
+def string_reverse(string):
+    rev=""
+    length=len(string)
+    for index in range(len(string)):
+        rev+= string[length-1]
+        length-=1
+    return rev
 
-   
-#234
-rev=0
 
-while number>0:
-    num=number%10
-    
-    rev=(rev*10)+num
-    number=number//10
-print(rev) 
+name=input("Enter your name: ")
+print(string_reverse(name))
