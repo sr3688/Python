@@ -55,16 +55,16 @@ while(carryon):
         else:
             print(decrypted_message)
         
+    do_continue=input("Do you want to continue encoding or decoding? Yes or No ")
+
+    if do_continue.lower()=='n' or do_continue.lower()=='no':
+       carryon=False
 
         
         
         
         
  
-    do_continue=input("Do you want to continue encoding or decoding? Yes or No ")
-
-    if do_continue.lower()=='n' or do_continue.lower()=='no':
-       carryon=False
 
 
 

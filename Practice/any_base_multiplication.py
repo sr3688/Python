@@ -23,16 +23,11 @@ def multiply_any_base(num1,num2,base):
     while(num2):
             remain=num2%10
             num2//=10
-            
             product_of_one=multiply_num1_with_num2(num1,remain,base)
             sum=addition_of_two_numbers(product_of_one*product,sum,base)
             product*=10
     return sum
-
-
-        
-
-
+            
 def addition_of_two_numbers(num1,num2,base):
     carry=0
     product=1
@@ -50,3 +45,8 @@ def addition_of_two_numbers(num1,num2,base):
 
 result=multiply_any_base(num1,num2,base)
 print(result)
+
+        
+
+
+
